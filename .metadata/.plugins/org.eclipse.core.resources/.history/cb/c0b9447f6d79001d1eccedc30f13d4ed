@@ -1,0 +1,14 @@
+import ProductDao.PaymentInterface;
+import ProductDaoImpl.CreditCard;
+import ProductDaoImpl.DebitCard;
+
+public class Main {
+
+	public static void main(String[] args) {
+			DebitCard dc=new DebitCard();
+			dc.payBill();
+			PaymentInterface pi=new CreditCard();
+			pi.payBill();
+	}
+
+}

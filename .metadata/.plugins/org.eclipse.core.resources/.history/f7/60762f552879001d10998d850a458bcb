@@ -1,0 +1,12 @@
+package com.ojas.springbootstarter.contoller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class BusController {
+	
+	public List<Bus> getAllBuses(){
+		
+	}
+
+}

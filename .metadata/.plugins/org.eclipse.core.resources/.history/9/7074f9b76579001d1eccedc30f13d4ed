@@ -1,0 +1,12 @@
+package com.ojas.Simple_Eats.model;
+
+@Entity
+public class Item {
+	
+	private int itemId;
+	private String itemName;
+	private double itemPrice;
+	private int itemQuantity;
+	private String itemImage;
+
+}

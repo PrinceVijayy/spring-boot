@@ -1,0 +1,23 @@
+package com.ojas.springbootstarter.contoller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.ojas.springbootstarter.Bus.Bus;
+import com.ojas.springbootstarter.service.BusService;
+
+@RestController
+public class BusController {
+	
+	@Autowired
+	BusService buses;
+	
+	@RequestMapping("/buses")
+	public List<Bus> getAllBuses(){
+		return buses.getAllBusesData();
+	}
+
+}

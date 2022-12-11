@@ -1,0 +1,13 @@
+package ProductDaoImpl;
+
+import ProductDao.PaymentInterface;
+
+public class CreditCard implements PaymentInterface {
+
+	public void payBill() {
+		
+		System.out.println("Payment Done by credit Card");
+		
+	}
+
+}

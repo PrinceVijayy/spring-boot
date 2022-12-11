@@ -1,0 +1,5 @@
+package com.ojas.Simple_Eats.repository;
+
+public interface ItemRepository {
+
+}

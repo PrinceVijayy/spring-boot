@@ -1,0 +1,5 @@
+package com.ojas.springbootstarter.Bus;
+
+public class Bus {
+
+}

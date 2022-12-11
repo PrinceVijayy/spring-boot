@@ -1,0 +1,14 @@
+package com.ojas.Simple_Eats.model;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Item {
+	
+	private int itemId;
+	private String itemName;
+	private double itemPrice;
+	private int itemQuantity;
+	private String itemImage;
+
+}

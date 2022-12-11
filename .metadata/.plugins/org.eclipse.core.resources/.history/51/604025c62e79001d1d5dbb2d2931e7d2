@@ -1,0 +1,24 @@
+package com.ojas.springbootstarter.service;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.ojas.springbootstarter.Bus.Bus;
+
+@Service
+public class BusService {
+	
+	List<Bus> buses=Arrays.asList(
+			new Bus(1,"kaveri",24),
+			new Bus(2,"orange",23),
+			new Bus(3,"banana",22),
+			new Bus(4,"rose",26),
+			new Bus(5,"krishna",25)
+			);
+	public List<Bus> getAllBusesData(){
+		return buses;
+	}
+	
+}

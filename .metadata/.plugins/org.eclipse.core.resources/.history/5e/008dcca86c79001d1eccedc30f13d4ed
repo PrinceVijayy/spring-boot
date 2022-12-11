@@ -1,0 +1,7 @@
+package ProductDaoImpl;
+
+import ProductDao.PaymentInterface;
+
+public class CreditCard implements PaymentInterface {
+
+}

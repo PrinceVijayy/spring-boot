@@ -1,0 +1,30 @@
+package com.ojas.Simple_Eats.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.ojas.Simple_Eats.model.Item;
+import com.ojas.Simple_Eats.repository.ItemRepository;
+
+@Service
+public class ItemService {
+	
+	@Autowired
+	ItemRepository itemRepository;
+	
+	public List<Item> getAllItems(){
+		List<Item> li=new ArrayList<>();
+		itemRepository.findAll().forEach(li::add);
+		return li;
+	}
+	public String createItem(Item item) {
+		
+		System.out.println(item);
+		itemRepository.save(item);
+		return "Item Created";
+	}
+
+}

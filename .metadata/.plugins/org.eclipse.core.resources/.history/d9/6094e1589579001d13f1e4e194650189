@@ -1,0 +1,23 @@
+package com.ojas.Simple_Eats.model;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Item {
+	
+	@Id
+	private int itemId;
+	private String itemName;
+	private double itemPrice;
+	private int itemQuantity;
+	private String itemImage;
+
+}
